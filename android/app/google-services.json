@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "11477565208",
+    "project_id": "diagno-dialyse",
+    "storage_bucket": "diagno-dialyse.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:11477565208:android:939ac1a3b32b6e9e0f286d",
+        "android_client_info": {
+          "package_name": "com.example.ddialyse"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "11477565208-4fies3iik0o32rebtllad9g5anojqmuc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ddialyse",
+            "certificate_hash": "aca9f5a01c4810574f187753966c354562bc8564"
+          }
+        },
+        {
+          "client_id": "11477565208-f79sn8ierth2l8dphmtq51rnatbn2q94.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWzyT9t89KgxfPjbjp3E2BdbW1KjyDSW8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "11477565208-f79sn8ierth2l8dphmtq51rnatbn2q94.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
