@@ -1,5 +1,6 @@
 import 'package:ddialyse/screens/const.dart';
 import 'package:ddialyse/screens/homepage.dart';
+import 'package:ddialyse/screens/measure.dart';
 import 'package:ddialyse/var.dart';
 import 'package:flutter/material.dart';
 import 'package:line_icons/line_icons.dart';
@@ -27,7 +28,7 @@ class _homeState extends State<home> {
         },
         children: [
           Homepage(),
-          Container(),
+          measure(),
           Container(),
         ],
       ),
@@ -40,16 +41,16 @@ class _homeState extends State<home> {
             label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Ionicons.fitness_outline),
+            icon: Icon(Ionicons.pulse_outline),
             label: 'Measure',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Ionicons.analytics_outline),
+            icon: Icon(Ionicons.bar_chart_outline),
             label: 'Analytics',
           ),
         ],
         currentIndex: index,
-        selectedItemColor: secondary,
+        selectedItemColor: bleu,
         unselectedItemColor: Colors.white,
         onTap: (index) {
           _pageController.animateToPage(index,
