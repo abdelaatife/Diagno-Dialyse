@@ -1,4 +1,5 @@
 import 'package:ddialyse/screens/HomeDrawer.dart';
+import 'package:ddialyse/screens/calendre.dart';
 import 'package:ddialyse/screens/const.dart';
 import 'package:ddialyse/screens/profile_page.dart';
 import 'package:flutter/material.dart';
@@ -91,50 +92,56 @@ class _HomepageState extends State<Homepage> {
               SizedBox(
                 height: 25,
               ),
-              Container(
-                padding: EdgeInsets.all(18),
-                height: 110,
-                width: 360,
-                decoration: BoxDecoration(
-                    boxShadow: [
-                      BoxShadow(
-                        color: secondary.withOpacity(0.25),
-                      )
-                    ],
-                    border: Border.all(
-                        color: Colors.white.withOpacity(0.2), width: 1.0),
-                    gradient: LinearGradient(
-                      colors: [backgrounddark, backgrounddark],
-                      stops: [0.0, 1.0],
-                    ),
-                    borderRadius: BorderRadius.circular(20)),
-                child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            "Explore Your Monthly Progress\nand Missions",
-                            style: TextStyle(
-                              color: Colors.white,
-                              height: 1.42,
-                            ),
-                          ),
-                          Text(
-                            "or add your missions",
-                            style: TextStyle(
-                              color: Colors.white.withOpacity(0.75),
-                              height: 2,
-                            ),
-                          ),
-                        ],
+              InkWell(
+                onTap: () {
+                  Navigator.of(context).push(
+                      MaterialPageRoute(builder: (context) => calendre()));
+                },
+                child: Container(
+                  padding: EdgeInsets.all(18),
+                  height: 110,
+                  width: 360,
+                  decoration: BoxDecoration(
+                      boxShadow: [
+                        BoxShadow(
+                          color: secondary.withOpacity(0.25),
+                        )
+                      ],
+                      border: Border.all(
+                          color: Colors.white.withOpacity(0.2), width: 1.0),
+                      gradient: LinearGradient(
+                        colors: [backgrounddark, backgrounddark],
+                        stops: [0.0, 1.0],
                       ),
-                      Image.asset(
-                        "asset/calendar.gif",
-                        color: bleu,
-                      )
-                    ]),
+                      borderRadius: BorderRadius.circular(20)),
+                  child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              "Explore Your Monthly Progress\nand Missions",
+                              style: TextStyle(
+                                color: Colors.white,
+                                height: 1.42,
+                              ),
+                            ),
+                            Text(
+                              "or add your missions",
+                              style: TextStyle(
+                                color: Colors.white.withOpacity(0.75),
+                                height: 2,
+                              ),
+                            ),
+                          ],
+                        ),
+                        Image.asset(
+                          "asset/calendar.gif",
+                          color: bleu,
+                        )
+                      ]),
+                ),
               ),
               SizedBox(
                 height: 15,
@@ -159,6 +166,7 @@ class _HomepageState extends State<Homepage> {
                       child: Icon(
                         Ionicons.apps_outline,
                         size: 28,
+                        color: Colors.white,
                       ),
                     ),
                   )
@@ -168,6 +176,7 @@ class _HomepageState extends State<Homepage> {
                 height: 15,
               ),
               SingleChildScrollView(
+                primary: true,
                 scrollDirection: Axis.horizontal,
                 child: Row(
                   children: [
@@ -175,8 +184,14 @@ class _HomepageState extends State<Homepage> {
                       margin: EdgeInsets.all(6),
                       padding: EdgeInsets.all(6),
                       decoration: BoxDecoration(
+                          boxShadow: [
+                            BoxShadow(
+                                color: bleu,
+                                blurRadius: 1.5,
+                                blurStyle: BlurStyle.outer)
+                          ],
                           image: DecorationImage(
-                              image: AssetImage('asset/m2.png')),
+                              image: AssetImage('asset/m2.jpg')),
                           borderRadius: BorderRadius.circular(10),
                           color: textlight),
                       width: 120,
@@ -186,8 +201,14 @@ class _HomepageState extends State<Homepage> {
                       margin: EdgeInsets.all(6),
                       padding: EdgeInsets.all(6),
                       decoration: BoxDecoration(
+                          boxShadow: [
+                            BoxShadow(
+                                color: bleu,
+                                blurRadius: 1.5,
+                                blurStyle: BlurStyle.outer)
+                          ],
                           image: DecorationImage(
-                              image: AssetImage('asset/m3.png')),
+                              image: AssetImage('asset/m3.jpg')),
                           borderRadius: BorderRadius.circular(10),
                           color: textlight),
                       width: 120,
@@ -197,8 +218,15 @@ class _HomepageState extends State<Homepage> {
                       margin: EdgeInsets.all(6),
                       padding: EdgeInsets.all(6),
                       decoration: BoxDecoration(
+                          boxShadow: [
+                            BoxShadow(
+                                color: bleu,
+                                blurRadius: 1.5,
+                                blurStyle: BlurStyle.outer)
+                          ],
                           image: DecorationImage(
-                              image: AssetImage('asset/m4.png')),
+                              fit: BoxFit.fill,
+                              image: AssetImage('asset/m4.jpg')),
                           borderRadius: BorderRadius.circular(10),
                           color: textlight),
                       width: 120,
@@ -208,8 +236,15 @@ class _HomepageState extends State<Homepage> {
                       margin: EdgeInsets.all(6),
                       padding: EdgeInsets.all(6),
                       decoration: BoxDecoration(
+                          boxShadow: [
+                            BoxShadow(
+                                color: bleu,
+                                blurRadius: 1.5,
+                                blurStyle: BlurStyle.outer)
+                          ],
                           image: DecorationImage(
-                              image: AssetImage('asset/m1.png')),
+                              fit: BoxFit.fill,
+                              image: AssetImage('asset/m1.jpg')),
                           borderRadius: BorderRadius.circular(10),
                           color: textlight),
                       width: 120,
@@ -218,7 +253,6 @@ class _HomepageState extends State<Homepage> {
                   ],
                 ),
               ),
-              
             ],
           ),
         ),

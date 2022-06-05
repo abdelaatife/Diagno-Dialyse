@@ -47,7 +47,7 @@ class _welcomState extends State<welcom> {
                   height: 50,
                   width: 50,
                   decoration: BoxDecoration(
-                      color: bleu,
+                      color: secondary,
                       borderRadius: BorderRadius.circular(50),
                       backgroundBlendMode: BlendMode.darken),
                 )
@@ -96,7 +96,7 @@ class _welcomState extends State<welcom> {
                   height: 50,
                   width: 50,
                   decoration: BoxDecoration(
-                      color: secondary,
+                      color: bleu,
                       borderRadius: BorderRadius.circular(50),
                       backgroundBlendMode: BlendMode.darken),
                 ),
