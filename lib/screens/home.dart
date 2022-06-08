@@ -1,6 +1,6 @@
 import 'package:ddialyse/screens/const.dart';
-import 'package:ddialyse/screens/homepage.dart';
-import 'package:ddialyse/screens/measure.dart';
+import 'package:ddialyse/screens/homePages/homepage.dart';
+import 'package:ddialyse/screens/homePages/measure.dart';
 import 'package:ddialyse/var.dart';
 import 'package:flutter/material.dart';
 import 'package:line_icons/line_icons.dart';

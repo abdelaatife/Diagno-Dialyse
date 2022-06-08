@@ -1,6 +1,6 @@
-import 'package:ddialyse/screens/HomeDrawer.dart';
 import 'package:ddialyse/screens/calendre.dart';
 import 'package:ddialyse/screens/const.dart';
+import 'package:ddialyse/screens/homePages/HomeDrawer.dart';
 import 'package:ddialyse/screens/profile_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
@@ -194,8 +194,8 @@ class _HomepageState extends State<Homepage> {
                               image: AssetImage('asset/m2.jpg')),
                           borderRadius: BorderRadius.circular(10),
                           color: textlight),
-                      width: 120,
-                      height: 120,
+                      width: 130,
+                      height: 140,
                     ),
                     Container(
                       margin: EdgeInsets.all(6),
@@ -208,11 +208,12 @@ class _HomepageState extends State<Homepage> {
                                 blurStyle: BlurStyle.outer)
                           ],
                           image: DecorationImage(
+                            fit: BoxFit.fill,
                               image: AssetImage('asset/m3.jpg')),
                           borderRadius: BorderRadius.circular(10),
                           color: textlight),
-                      width: 120,
-                      height: 120,
+                      width: 130,
+                      height: 140,
                     ),
                     Container(
                       margin: EdgeInsets.all(6),
@@ -229,8 +230,8 @@ class _HomepageState extends State<Homepage> {
                               image: AssetImage('asset/m4.jpg')),
                           borderRadius: BorderRadius.circular(10),
                           color: textlight),
-                      width: 120,
-                      height: 120,
+                      width: 130,
+                      height: 140,
                     ),
                     Container(
                       margin: EdgeInsets.all(6),
@@ -247,8 +248,8 @@ class _HomepageState extends State<Homepage> {
                               image: AssetImage('asset/m1.jpg')),
                           borderRadius: BorderRadius.circular(10),
                           color: textlight),
-                      width: 120,
-                      height: 120,
+                      width: 130,
+                      height: 140,
                     ),
                   ],
                 ),

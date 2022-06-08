@@ -57,7 +57,7 @@ class _measureState extends State<measure> {
             Row(
               children: [
                 Text(
-                  'Use Device and place the tapes\nin their right place and press OK ',
+                 'Use Device and place the tapes\nin their right place and press OK ',
                   style: TextStyle(
                     fontSize: 19,
                     height: 1.25,
