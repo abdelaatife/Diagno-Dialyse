@@ -1,6 +1,7 @@
 import 'package:ddialyse/screens/calendre.dart';
 import 'package:ddialyse/screens/const.dart';
 import 'package:ddialyse/screens/homePages/HomeDrawer.dart';
+import 'package:ddialyse/screens/meals.dart';
 import 'package:ddialyse/screens/profile_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
@@ -157,7 +158,8 @@ class _HomepageState extends State<Homepage> {
                         fontWeight: FontWeight.w300),
                   ),
                   InkWell(
-                    onTap: () {},
+                    onTap: () { Navigator.of(context).push(
+                      MaterialPageRoute(builder: (context) => meals()));},
                     child: Container(
                       height: 50,
                       width: 50,
